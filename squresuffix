@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script language="javascript">
+	function squareSuffix(form1)
+	{
+		square=parseInt(form1.elements[0].value);
+		square=square*square;
+		alert(form1.elements[0].value+square + '\n' + form1.elements[1].value+square + '\n' + form1.elements[2].value+square + '\n' + form1.elements[3].value+square);
+	}
+</script>
+  
+</head>
+<body>
+
+<div class="container">
+  <h2>Vertical (basic) form</h2>
+  <form role="form">
+    <div class="form-group">
+      <label for="Value1">value1</label>
+      <input type="text" class="form-control" id="val1" placeholder="Enter value1">
+    </div>
+    <div class="form-group">
+      <label for="value2">value2</label>
+      <input type="text" class="form-control" id="val2" placeholder="Enter value2">
+    </div>
+	<div class="form-group">
+      <label for="value3">value3</label>
+      <input type="text" class="form-control" id="val3" placeholder="Enter value3">
+    </div>
+   <input type="button" value="Print" onClick="squareSuffix(form)">
+  </form>
+</div>
+
+</body>
+</html>
+
